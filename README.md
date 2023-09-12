@@ -1,6 +1,8 @@
-👋 Hi, I’m @woutermont, Linked Data Engineer and Semantic Web Philosopher, working as Software Architect at Digita BV, 
+👋 Hi, I’m @woutermont, Linked Data Engineer and Semantic Web Philosopher, 
+working as Senior Researcher on the development of Solid technology at imec, 
 and contributing to different projects and specifications within and around the realm of Solid, RDF and Linked Data in general.
-In the past I've worked around graph-based data storage and inference within digital humanities, as well as on several other philosophical topics, including philosophy of biology, idealistic metaphysics, and ethics of artificial intelligence.
+In the past I've worked around graph-based data storage and inference within digital humanities, 
+as well as on several other philosophical topics, including philosophy of biology, idealistic metaphysics, and ethics of artificial intelligence.
 
 <!---
 - 👀 I’m interested in ...
