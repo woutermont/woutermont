@@ -1,0 +1,46 @@
+@prefix wouter: <https://wouter.termont.online> .
+@prefix profile: <https://raw.githubusercontent.com/woutermont/woutermont/main/profile.ttl> .
+@prefix photo:   <https://raw.githubusercontent.com/woutermont/woutermont/main/profile.jpeg> .
+
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix solid:   <http://www.w3.org/ns/solid/terms#> .
+@prefix pim:     <http://www.w3.org/ns/pim/space#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix interop: <http://www.w3.org/ns/solid/interop#> .
+@prefix acl:     <http://www.w3.org/ns/auth/acl#> .
+@prefix ldp:     <http://www.w3.org/ns/ldp#> .
+@prefix acp:     <http://www.w3.org/ns/solid/acp#> .
+@prefix as:      <https://www.w3.org/ns/activitystreams#> .
+@prefix dc:      <http://purl.org/dc/terms/> .
+@prefix ldp:     <http://www.w3.org/ns/ldp#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema:  <https://schema.org/Person> .
+
+profile: a foaf:PersonalProfileDocument ;
+    foaf:maker wouter: ;
+    foaf:primaryTopic wouter: .
+
+wouter: a interop:Agent, schema:Person, foaf:Person ;
+    foaf:nick                "woutermont" ;
+    foaf:name                "Wouter Termont" ;
+    vcard:fn                 "Wouter Termont" ;
+    vcard:honorific-prefix   "Mr." ;
+    vcard:organization-name  "imec" ;
+    vcard:role               "University Engineer - Senior Researcher" ;
+    vcard:hasPhoto           photo: .
+
+#     solid:oidcIssuer <https://idp.use.id/> ;  
+#     pim:storage <https://pods.use.id/03cc1065-7643-5306-9873-7a3fdf837a6c/> ;
+#     interop:hasRegistrySet <https://pods.use.id/03cc1065-7643-5306-9873-7a3fdf837a6c/registries/registryset> ;
+#     ldp:inbox </inbox/>;
+#     pim:preferencesFile </settings/prefs.ttl>;
+#     solid:account </>;
+#     solid:oidcIssuer <https://solidcommunity.net>;
+#     solid:oidcIssuerRegistrationToken "a05ca52b-04f7-4b6e-ad45-fd2e83e043b4";
+#     solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
+#     solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
+#     foaf:knows <https://wouteraj.inrupt.net/profile/card#>;
