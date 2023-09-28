@@ -1,6 +1,7 @@
-@prefix wouter: <https://wouter.termont.online> .
+@prefix wouter:  <https://wouter.termont.online> .
 @prefix profile: <https://raw.githubusercontent.com/woutermont/woutermont/main/profile.ttl> .
 @prefix photo:   <https://raw.githubusercontent.com/woutermont/woutermont/main/profile.jpeg> .
+@prefix mail:    <mailto:145133229+termontwouter@users.noreply.github.com> .
 
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix solid:   <http://www.w3.org/ns/solid/terms#> .
@@ -18,24 +19,43 @@
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-@prefix schema:  <https://schema.org/Person> .
+@prefix schema:  <http://schema.org/> .
+@prefix knows:   <https://data.knows.idlab.ugent.be/person/office/#> .
 
 profile: a foaf:PersonalProfileDocument ;
-    foaf:maker wouter: ;
-    foaf:primaryTopic wouter: .
+    foaf:maker         wouter: ;
+    foaf:primaryTopic  wouter: .
 
 wouter: a interop:Agent, schema:Person, foaf:Person ;
-    foaf:nick                "woutermont" ;
-    foaf:name                "Wouter Termont" ;
-    vcard:fn                 "Wouter Termont" ;
-    vcard:honorific-prefix   "Mr." ;
-    vcard:organization-name  "imec" ;
-    vcard:role               "University Engineer - Senior Researcher" ;
-    vcard:hasPhoto           photo: .
 
-wouter: 
-    solid:oidcIssuer <https://woutertermont.pod.knows.idlab.ugent.be/> .
-    pim:storage <https://woutertermont.pod.knows.idlab.ugent.be/main> ;
+    vcard:honorific-prefix   "Mr." ;
+
+    foaf:givenName           "Wouter" ;
+    foaf:familyName          "Termont" ;
+    foaf:name                "Wouter Termont" ;
+    schema:name              "Wouter Termont" ;
+    vcard:fn                 "Wouter Termont" ;
+
+    vcard:title              "Senior Researcher" ;
+    vcard:role               "University Engineer" ;
+
+    vcard:organization-name  "imec" ;
+
+    foaf:nick                "woutermont" ; 
+
+    foaf:img                 photo: ;
+    vcard:hasPhoto           photo: ;
+
+    foaf:mbox                mail: ;
+
+    solid:oidcIssuer         <https://woutertermont.pod.knows.idlab.ugent.be/> ;
+    pim:storage              <https://woutertermont.pod.knows.idlab.ugent.be/main> ;
+
+    foaf:account             _:knows .
+
+_:knows a knows:GitHubAccount ;
+    foaf:accountName             "termontwouter" ;
+    foaf:accountServiceHomepage  <https://github.com/> .
 
 #     interop:hasRegistrySet <https://pods.use.id/03cc1065-7643-5306-9873-7a3fdf837a6c/registries/registryset> ;
 #     ldp:inbox </inbox/>;
