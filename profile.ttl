@@ -33,16 +33,14 @@ wouter: a interop:Agent, schema:Person, foaf:Person ;
     vcard:role               "University Engineer - Senior Researcher" ;
     vcard:hasPhoto           photo: .
 
-wouter: solid:oidcIssuerRegistrationToken "37c45d17-5412-4a1b-a356-dfc3c56f53e0" .
+wouter: 
+    solid:oidcIssuer <https://woutertermont.pod.knows.idlab.ugent.be/> .
+    pim:storage <https://woutertermont.pod.knows.idlab.ugent.be/main> ;
 
-#     solid:oidcIssuer <https://idp.use.id/> ;  
-#     pim:storage <https://pods.use.id/03cc1065-7643-5306-9873-7a3fdf837a6c/> ;
 #     interop:hasRegistrySet <https://pods.use.id/03cc1065-7643-5306-9873-7a3fdf837a6c/registries/registryset> ;
 #     ldp:inbox </inbox/>;
 #     pim:preferencesFile </settings/prefs.ttl>;
 #     solid:account </>;
-#     solid:oidcIssuer <https://solidcommunity.net>;
-#     solid:oidcIssuerRegistrationToken "a05ca52b-04f7-4b6e-ad45-fd2e83e043b4";
 #     solid:privateTypeIndex </settings/privateTypeIndex.ttl>;
 #     solid:publicTypeIndex </settings/publicTypeIndex.ttl>;
 #     foaf:knows <https://wouteraj.inrupt.net/profile/card#>;
