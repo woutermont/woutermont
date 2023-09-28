@@ -49,7 +49,7 @@ wouter: a interop:Agent, schema:Person, foaf:Person ;
     foaf:mbox                mail: ;
 
     solid:oidcIssuer         <https://woutertermont.pod.knows.idlab.ugent.be/> ;
-    pim:storage              <https://woutertermont.pod.knows.idlab.ugent.be/main> ;
+    pim:storage              <https://woutertermont.pod.knows.idlab.ugent.be/main/> ;
 
     foaf:account             _:knows .
 
