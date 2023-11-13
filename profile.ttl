@@ -1,7 +1,6 @@
 @prefix wouter:  <https://wouter.termont.online> .
 @prefix profile: <https://raw.githubusercontent.com/woutermont/woutermont/main/profile.ttl> .
 @prefix photo:   <https://raw.githubusercontent.com/woutermont/woutermont/main/profile.jpeg> .
-@prefix mail:    <mailto:145133229+termontwouter@users.noreply.github.com> .
 
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix solid:   <http://www.w3.org/ns/solid/terms#> .
@@ -46,7 +45,7 @@ wouter: a interop:Agent, schema:Person, foaf:Person ;
     foaf:img                 photo: ;
     vcard:hasPhoto           photo: ;
 
-    foaf:mbox                mail: ;
+    foaf:mbox                <mailto:wouter.termont@ugent.be> ;
 
     solid:oidcIssuer         <https://woutertermont.pod.knows.idlab.ugent.be/> ;
     pim:storage              <https://woutertermont.pod.knows.idlab.ugent.be/main/> ;
