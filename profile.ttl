@@ -1,4 +1,4 @@
-@prefix wouter:  <https://wouter.termont.online> .
+@prefix wouter:  <https://wouter.termont.online/> .
 @prefix profile: <https://raw.githubusercontent.com/woutermont/woutermont/main/profile.ttl> .
 @prefix photo:   <https://raw.githubusercontent.com/woutermont/woutermont/main/profile.jpeg> .
 
