@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "acl": "http://www.w3.org/ns/auth/acl#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "wouter": "https://wouter.termont.online/",
+    "profile": "https://raw.githubusercontent.com/woutermont/woutermont/main/profile.jsonld",
+    "photo": "https://raw.githubusercontent.com/woutermont/woutermont/main/profile.jpeg",
+    "solid": "http://www.w3.org/ns/solid/terms#",
+    "pim": "http://www.w3.org/ns/pim/space#",
+    "interop": "http://www.w3.org/ns/solid/interop#",
+    "acp": "http://www.w3.org/ns/solid/acp#",
+    "knows": "https://data.knows.idlab.ugent.be/person/office/#"
+  },
+  "@graph": [
+    {
+      "@id": "profile:",
+      "@type": "foaf:PersonalProfileDocument",
+      "foaf:maker": { "@id": "wouter:" },
+      "foaf:primaryTopic": { "@id": "wouter:" }
+    },
+    {
+      "@id": "wouter:",
+      "@type": [ "interop:Agent", "schema:Person", "foaf:Person" ],
+      "schema:name": "Wouter Termont",
+      "vcard:fn": "Wouter Termont",
+      "vcard:hasPhoto": { "@id": "photo:" },
+      "vcard:honorific-prefix": "Mr.",
+      "vcard:organization-name": "imec",
+      "vcard:role": "University Engineer",
+      "vcard:title": "Senior Researcher",
+      "pim:storage": { "@id": "https://woutertermont.pod.knows.idlab.ugent.be/main/" },
+      "solid:oidcIssuer": { "@id": "https://woutertermont.pod.knows.idlab.ugent.be/" },
+      "foaf:account": { "@id": "_:knows" },
+      "foaf:familyName": "Termont",
+      "foaf:givenName": "Wouter",
+      "foaf:img": { "@id": "photo:" },
+      "foaf:mbox": { "@id": "mailto:wouter.termont@ugent.be" },
+      "foaf:name": "Wouter Termont",
+      "foaf:nick": "woutermont"
+    }
+    {
+      "@id": "_:knows",
+      "@type": "knows:GitHubAccount",
+      "foaf:accountName": "termontwouter",
+      "foaf:accountServiceHomepage": {
+        "@id": "https://github.com/"
+      }
+    },
+  ]
+}
